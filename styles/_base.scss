@@ -1,0 +1,42 @@
+html,
+body {
+  font-family: $font_family;
+
+}
+
+body {
+  background-color: $primary_color;
+}
+
+header {
+  background-color: $secondary_color;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: $dark_color;
+}
+
+p {
+  font-size: $spacer * 3;
+  color: $medium_color;
+  padding-bottom: 20px;
+}
+
+h2 {
+  
+  font-weight: 700;
+  color: $medium_color;
+  padding-bottom: 20px;
+}
+
+h3 {
+  
+  font-weight: 700;
+  color: $medium_color;
+}
+
+span {
+  color: $dark_color;
+}

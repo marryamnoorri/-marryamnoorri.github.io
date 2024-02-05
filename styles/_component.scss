@@ -1,0 +1,156 @@
+@import "./mixin";
+
+.header {
+  @include width;
+  display: flex;
+  align-items: center;
+  gap: 385px;
+}
+
+.menu {
+  display: flex;
+  gap: 55px;
+  > * {
+    list-style-type: none;
+  }
+  padding-right: 0;
+}
+
+.intro-container {
+  @include width;
+  display: flex;
+
+  > div {
+    width: 50%;
+  }
+}
+
+.intro-div {
+  padding-top: 100px;
+
+  > h2 {
+    font-size: $spacer * 6;
+  }
+
+  > h3 {
+    font-size: $spacer * 5;
+    line-height: 3rem;
+  }
+
+  > p {
+    font-size: $spacer * 4;
+  }
+}
+
+.person-div > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.hire-div {
+  display: flex;
+  padding-top: 100px;
+  padding-right: 130px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-button {
+  background-color: $light_color;
+  width: 200px;
+  height: 70px;
+  border-radius: 20px;
+  font-size: $spacer * 3.5;
+}
+
+.hire-button:hover {
+  background-color: $dark_color;
+
+  > a {
+    color: $light_color;
+  }
+}
+
+.about-container {
+  @include width;
+  display: flex;
+  gap: 60px;
+
+  > :first-child {
+    width: 30%;
+  }
+
+  > :nth-of-type(2) {
+    width: 70%;
+  }
+
+  padding: 130px 0;
+}
+
+.person-div2 > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.my-picture2 {
+  border: 5px solid $medium_color;
+}
+
+.about-div {
+  background-color: $secondary_color;
+
+  > h2 {
+    font-size: $spacer * 3;
+    padding-top: 20px;
+  }
+
+  > p {
+    font-size: $spacer * 2.5;
+    line-height: 1.8rem;
+  }
+
+  
+}
+
+.folio-cont {
+  @include width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+
+  > div > h2 {
+    font-size: $spacer * 3;
+  }
+
+  > div > h3 {
+    font-size: $spacer * 4;
+  }
+}
+
+.project-cont {
+  @include width;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-bottom: 150px;
+}
+
+.folio-pic {
+  > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  > figcaption {
+    padding-top: 30px;
+  }
+}
+
+
